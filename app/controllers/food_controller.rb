@@ -55,4 +55,8 @@ class FoodController < ApplicationController
 			body: "Hey! donor is waiting.Please use #{token} to order food"
 		)
 	end
+	
+	def create_order(params)
+		order = Order.create(:receiver_user_id => params[:receiver_user_id],:donor_user_id => params[:donor_user_id],:no_of_meals => params[:no_of_meals],:event_id => params[:event_id])
+	end
 end
