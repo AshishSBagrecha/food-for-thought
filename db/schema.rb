@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 2019_07_05_043720) do
     t.string "last_name"
     t.string "location"
     t.string "email_id"
-    t.integer "phone_number"
+    t.string "phone_number"
     t.string "user_type"
     t.string "password"
   end
