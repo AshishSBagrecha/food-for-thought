@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Receiver Event Page</title>
+	<meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	  <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+	<div class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="#"><img src="/food_for_thought_logo.png" class="logo-img"></a>
+			</div>
+			<h2 class="user-account">
+				User (Receiver)
+			</h2>
+		</div>
+	</div>
+	<div class="container">
+			<div class="event-content">
+				<table class="table table-hover event-table">
+					<thead>
+						<th>S.no</th>
+						<th>Event Details</th>
+						<th>Hosted No.of Meals</th>
+						<th>Available No.of Meals</th>
+						<th>Status
+						<th>Order Details</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Some Event details</td>
+							<td>30</td>
+							<td>8</td>
+							<td class="status-active">Active</td>
+							<td><button class="btn btn-primary" data-toggle="modal" data-target="#order-claim-modal">Claim</button></td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>Some Event details</td>
+							<td>30</td>
+							<td>8</td>
+							<td class="status-in-active">InActive</td>
+							<td><button class="btn btn-primary disabled" disabled data-toggle="modal" data-target="#order-claim-modal">Claim</button></td>
+						</tr>
+					</tbody>
+				</table>
+				<div id="order-claim-modal" class="modal fade" role="dialog">
+				  <div class="modal-dialog">
+				    <!-- Modal content-->
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal">&times;</button>
+				        <h4 class="modal-title">Claim Form</h4>
+				      </div>
+				      <div class="modal-body">
+				        <form class="login-form">
+							<div class="form-group">
+								<label for="user">Reg. Mobile No:</label>
+								<input class="form-control" type="tel" name="user" id="user" placeholder="Mobile No:" required >
+							</div>
+							<div class="form-group">
+								<label for="no-of-meals">Meals Required: </label>
+								<input type="number" class="form-control" id="no-of-meals" name="no-of-meals" min="1" max="100">
+							</div>
+							<div class="form-group">
+								<label for="code">Event Code: </label>
+								<input type="text" class="form-control" id="event-code" name="event-code">
+							</div>
+							<button type="submit" class="btn btn-primary"> Claim </button>
+						</form>
+				      </div>
+				    </div>
+
+				  </div>
+				</div>
+			</div>
+		</div>
+</body>
+</html>

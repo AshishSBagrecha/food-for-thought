@@ -4,12 +4,13 @@ class FoodController < ApplicationController
   end
 
   def login_action
-  	p "===================================="
-  	p "login_action"
   	response = {}
+  	p "========params============"
+  	p params
   	username = params[:user]
   	password = params[:password]
-  	user = User.find_by_phone_number(username)
+  	user = User.find_by_phone_number(username.to_i)
+  	p user
   	if user.present? && user.password == password
        response[:status] = 200
        response[:message] = "success"

@@ -44,20 +44,20 @@ function login_action(){
   var password = $('#password').val();
 	$.ajax({
 	    url: '/food/login_action',
-	    type: 'POST',
+	    type: 'GET',
 	    data: {user:user,password:password},
-	    async: false,
 	    success: function (response) {
-	    	res_data = JSON.parse(response)
-	    	if (res_data['status'] == 200)
-	    	{
-	    		alert(res_data['message']);
-	    	}
+	    	location.href = "/food/receiver"
+	    	// alert(response['status']);
+	    	// if (response['status'] == 200)
+	    	// {
+	    	// 	location.href = "/food/receiver"
+	    	// }
 	       
 	    },
-	    error: function () {
-	        alert("Error while processing.. Try again");
-	    }
+	    // error: function () {
+	    //     alert("Error while processing.. Try again");
+	    // }
 	  });
 	}
 </script
