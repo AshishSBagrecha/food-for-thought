@@ -39,6 +39,7 @@ class FoodController < ApplicationController
 	    event_status = "Active"
 	    Event.create(location: => location,:available_meals => available_meals,:phone_number => pno,:email_id => email_id,:donor_user_id => donor_user_id,:event_code => event_code,:status => event_status)
 	    User.find_all_by_user_type("Receiver").each do |user|
+			UserMailer.send_email(user.email_id,event_code).deliver!
 	    		send_message(user.phone_number,event_code)
 	    end
 	end
