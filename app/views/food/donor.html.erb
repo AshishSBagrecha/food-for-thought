@@ -41,7 +41,7 @@
 							<td><%= event.available_meals%></td>
 							<td><%= event.available_meals - event.orders.collect{|x| x.no_of_meals}.sum%></td>
 							<td><%= event.status%></td>
-							<td><button data-event-id=<%= event.id%> class="btn btn-primary" data-toggle="modal" data-target="#order-detail-form">Order Details</button></td>
+							<td><button onclick="get_order_details(<%= event.id%>)" class="btn btn-primary" data-toggle="modal" data-target="#order-detail-form">Order Details</button></td>
 						</tr>
 					<%end%>
 				</tbody>
@@ -96,13 +96,6 @@
 						<th>Status</th>
 				  </thead>
 	       	<tbody>
-	       	 <%Order.all.each do |order|%>
-		       	<tr>
-		       	<td><%=order.event.event_code%></td>
-		       	<td><%=order.no_of_meals%></td>
-		       	<td>In Progress</td>
-		       	</tr>
-		       <%end%>
 	       	</tbody>
 	       </table>
 	     </div>
@@ -118,7 +111,6 @@ function create_event()
 	var email = $('#email').val();
 	var phone_number = $('#phone_number').val();
 	var hosted = $('#hosted').val();
-	var user_id = 
 	$.ajax({
     url: '/food/create_event',
     type: 'POST',
@@ -126,6 +118,30 @@ function create_event()
     success: function (response) {
     	alert("Created event successfully");
     	location.href = "/food/donor"
+    },
+    error: function () {
+        alert("Error while processing.. Try again");
+    }
+	  });
+}
+
+function get_order_details(event_id)
+{
+	$.ajax({
+    url: '/food/get_order_details',
+    type: 'GET',
+    data: {event_id:event_id},
+    success: function (response) {
+    	$('#order-detail-form tbody').html('');
+    var tr;
+    for (var i = 0; i < response.length; i++) {
+        tr = $('<tr/>');
+        tr.append("<td>" + response[i].event_code + "</td>");
+        tr.append("<td>" + response[i].no_of_meals + "</td>");
+        tr.append("<td> In Progress</td>");
+       $('#order-detail-form tbody').append(tr);
+    }
+
     },
     error: function () {
         alert("Error while processing.. Try again");

@@ -28,9 +28,20 @@ class FoodController < ApplicationController
   end
 
   def place_order
-  	p "==============place_order=================="
   	create_order(params)
   	render :json => "success".to_json
+  end
+
+  def get_order_details
+  	result = []
+  	orders = Event.find_by_id(params[:event_id]).orders
+  	orders.each do |order|
+      data = {}
+      data["event_code"] = order.event.event_code
+      data["no_of_meals"]  = order.no_of_meals
+      result << data
+  	end
+    render :json => result.to_json
   end
  
 	private
