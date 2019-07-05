@@ -5,8 +5,6 @@ class FoodController < ApplicationController
 
   def login_action
   	response = {}
-  	p "========params============"
-  	p params
   	username = params[:user]
   	password = params[:password]
   	user = User.find_by_phone_number(username.to_i)
@@ -14,7 +12,7 @@ class FoodController < ApplicationController
   	if user.present? && user.password == password
        response[:status] = 200
        response[:message] = "success"
-       response[:details] = {"first_name" => user.first_name,"last_name" => user.last_name,"user_type" => user_type} 
+       response[:details] = {"first_name" => user.first_name,"last_name" => user.last_name,"user_type" => user.user_type} 
   	else
       response[:status] = 500
   		response[:message] = "User does not exist, Please signup if you have not registered yet"

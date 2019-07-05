@@ -28,3 +28,28 @@
 	color: #0c9c7d;
 	font-size: 2em;
 }
+.status-active {
+	color: #5fdba7;
+	font-weight: 600;
+}
+.status-in-active {
+	color: #ff2400;
+	font-weight: 600;
+}
+.event-table tbody tr td {
+	vertical-align: middle;
+}
+.add-event {
+	margin: 20px;
+    float: right;
+}
+.add-event:after {
+	content: '';
+	clear: both;
+}
+#event-code {
+	text-transform: uppercase;
+}
+.order-table-header {
+	margin: 20px 0;
+}

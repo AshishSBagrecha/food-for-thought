@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Donor Event Page</title>
+	<meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	  <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+	<div class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="#"><img src="/food_for_thought_logo.png" class="logo-img"></a>
+			</div>
+			<h2 id="user_detail" class="user-account">
+			   <%= %> Donor
+			</h2>
+		</div>
+	</div>
+	<div class="container">
+		<button class="btn btn-primary add-event" data-toggle="modal" data-target="#add-event-modal">Add Event</button>
+		<div class="event-table">
+			<table class="table table-hover">
+				<thead>
+					<th>S.no</th>
+					<th>Location</th>
+					<th>Hosted No.of Meals</th>
+					<th>Remaining No.of Meals</th>
+					<th>Status
+					<th>Order Details</th>
+				</thead>
+				<tbody>
+					<%Event.all.each do |event|%>
+						<tr>
+							<td><%= event.id%></td>
+							<td><%= event.location%></td>
+							<td><%= event.available_meals%></td>
+							<td><%= event.available_meals%></td>
+							<td><%= event.status%></td>
+							<td><button onclick ="get_order_details()" class="btn btn-primary" data-toggle="modal" data-target="#order-detail-form">Order Details</button></td>
+						</tr>
+					<%end%>
+				</tbody>
+			</table>
+		</div>
+		<div id="add-event-modal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+		    <!-- Modal content-->
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <h4 class="modal-title">Add Event</h4>
+		      </div>
+		      <div class="modal-body">
+		        <form class="add-event-form">
+					<div class="form-group">
+						<label for="event-details">Event Details: </label>
+						<textarea class="form-control" name="event-details" id="event-details" required></textarea> 
+					</div>
+					<div class="form-group">
+						<label for="event-date">Event Date: </label>
+						<input type="date" class="form-control" name="event-date" id="event-date" required>
+					</div>
+					<div class="form-group">
+						<label for="hosted">Meals Hosted: </label>
+						<input type="number" class="form-control" id="hosted" name="hosted" min="1" required>
+					</div>
+					<button type="submit" class="btn btn-primary"> Add Event </button>
+				</form>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<div id="order-detail-form" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+	   <!-- Modal content-->
+	   <div class="modal-content">
+	     <div class="modal-header">
+	       <button type="button" class="close" data-dismiss="modal">&times;</button>
+	       <h4 class="modal-title">Order  Details</h4>
+	     </div>
+	     <div class="modal-body">
+	       <h4 class="order-table-header">Orders: </h4>
+	       <table class="table table-hover orders-now">
+	        <thead>
+						<th>Email ID</th>
+						<th>No.of Meals ordered </th>
+						<th>Status</th>
+				  </thead>
+	       	<tbody>
+		       	<tr>
+		       	<td>HKSJNDSF</td>
+		       	<td>8</td>
+		       	<td>Received</td>
+		       	</tr>
+		       	<tr>
+		       	<td>HKSJNDSF</td>
+		       	<td>10</td>
+		       	<td>Claimed</td>
+		       	</tr>
+		       	<tr>
+		       	<td>HKSJNDSF</td>
+		       	<td>2</td>
+		       	<td>Received</td>
+		       	</tr>
+	       	</tbody>
+	       </table>
+	     </div>
+	   </div>
+	</div>
+</div>
+	</div>
+</body>
+<script>
+</script
+</html>

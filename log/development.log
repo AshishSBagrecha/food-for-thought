@@ -3140,3 +3140,906 @@ Migrating to CreateOrders (20190705043720)
   ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
   [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
   ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`first_name`, `last_name`, `location`, `email_id`, `phone_number`, `user_type`, `password`) VALUES ('Prashant', 'Senapati', 'Adugodi', 'prasanta.senapati@pramata.com ', '7411282067', 'Receiver', 'welcome@123')[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (111.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`first_name`, `last_name`, `location`, `email_id`, `phone_number`, `user_type`, `password`) VALUES ('Ashish', 'Ahuja', 'BTM 1st Stage', 'ashish.ahuja@pramata.com', '9007170724', 'Receiver', 'welcome@123')[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (187.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`first_name`, `last_name`, `location`, `email_id`, `phone_number`, `user_type`, `password`) VALUES ('Ashish', 'Bagrecha', 'Rajajinagar', 'ashish.bagrecha@pramata.com', '7204225176', 'Donor', 'welcome@123')[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (188.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`first_name`, `last_name`, `location`, `email_id`, `phone_number`, `user_type`, `password`) VALUES ('Shubhendra', 'Pinge', 'Wilson Garden', 'shubhendra.pinge@pramata.com', '9972546989', 'Donor', 'welcome@123')[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (92.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+Started GET "/" for 10.0.2.2 at 2019-07-05 06:24:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by FoodController#login as HTML
+  Rendering food/login.html.erb within layouts/application
+  Rendered food/login.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 286ms (Views: 266.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/food/login_action?user=7411282067&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 06:24:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#login_action as */*
+  Parameters: {"user"=>"7411282067", "password"=>"[FILTERED]"}
+Started GET "/?user=7411282067&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 06:24:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (3.7ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`phone_number` = '7411282067' LIMIT 1[0m
+  ↳ app/controllers/food_controller.rb:12
+Processing by FoodController#login as HTML
+  Parameters: {"user"=>"7411282067", "password"=>"[FILTERED]"}
+  Rendering food/login.html.erb within layouts/application
+  Rendered food/login.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 309ms (ActiveRecord: 18.1ms)
+
+
+  
+Completed 200 OK in 370ms (Views: 367.2ms | ActiveRecord: 0.0ms)
+
+
+NameError (undefined local variable or method `user_type' for #<FoodController:0x00007f4a34010768>
+Did you mean?  username):
+  
+app/controllers/food_controller.rb:17:in `login_action'
+Started GET "/?user=7411282067&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 06:25:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/food/login_action?user=7411282067&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 06:25:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#login_action as */*
+  Parameters: {"user"=>"7411282067", "password"=>"[FILTERED]"}
+Processing by FoodController#login as HTML
+  Parameters: {"user"=>"7411282067", "password"=>"[FILTERED]"}
+  Rendering food/login.html.erb within layouts/application
+  Rendered food/login.html.erb within layouts/application (1.5ms)
+  [1m[36mUser Load (11.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`phone_number` = '7411282067' LIMIT 1[0m
+  ↳ app/controllers/food_controller.rb:12
+Completed 500 Internal Server Error in 270ms (ActiveRecord: 11.3ms)
+
+
+  
+Completed 200 OK in 290ms (Views: 288.3ms | ActiveRecord: 0.0ms)
+
+
+NameError (undefined local variable or method `user_type' for #<FoodController:0x00007f4a29f63900>
+Did you mean?  username):
+  
+app/controllers/food_controller.rb:17:in `login_action'
+Started GET "/?user=7411282067&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 06:26:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by FoodController#login as HTML
+  Parameters: {"user"=>"7411282067", "password"=>"[FILTERED]"}
+  Rendering food/login.html.erb within layouts/application
+  Rendered food/login.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 308ms (Views: 289.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/food/login_action?user=7411282067&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 06:26:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#login_action as */*
+  Parameters: {"user"=>"7411282067", "password"=>"[FILTERED]"}
+Started GET "/?user=7411282067&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 06:26:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (5.7ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`phone_number` = '7411282067' LIMIT 1[0m
+  ↳ app/controllers/food_controller.rb:12
+Processing by FoodController#login as HTML
+  Parameters: {"user"=>"7411282067", "password"=>"[FILTERED]"}
+  Rendering food/login.html.erb within layouts/application
+  Rendered food/login.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 56ms (Views: 0.1ms | ActiveRecord: 28.1ms)
+
+
+Started GET "/food/receiver" for 10.0.2.2 at 2019-07-05 06:26:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#receiver as HTML
+  Rendering food/receiver.html.erb within layouts/application
+  Rendered food/receiver.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 70ms (Views: 67.9ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 28ms (Views: 25.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-07-05 06:30:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by FoodController#login as HTML
+  Rendering food/login.html.erb within layouts/application
+  Rendered food/login.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 284ms (Views: 266.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/food/login_action?user=7411282067&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 06:30:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#login_action as */*
+  Parameters: {"user"=>"7411282067", "password"=>"[FILTERED]"}
+Started GET "/?user=7411282067&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 06:30:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`phone_number` = '7411282067' LIMIT 1[0m
+  ↳ app/controllers/food_controller.rb:12
+  [1m[35m (0.9ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by FoodController#login as HTML
+  Parameters: {"user"=>"7411282067", "password"=>"[FILTERED]"}
+  Rendering food/login.html.erb within layouts/application
+  Rendered food/login.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 47ms (Views: 0.2ms | ActiveRecord: 22.0ms)
+
+
+Completed 200 OK in 45ms (Views: 42.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?user=7411282067&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 06:31:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/food/login_action?user=7411282067&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 06:31:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#login_action as */*
+  Parameters: {"user"=>"7411282067", "password"=>"[FILTERED]"}
+Processing by FoodController#login as HTML
+  Parameters: {"user"=>"7411282067", "password"=>"[FILTERED]"}
+  Rendering food/login.html.erb within layouts/application
+  Rendered food/login.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (6.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`phone_number` = '7411282067' LIMIT 1[0m
+  ↳ app/controllers/food_controller.rb:12
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 6.4ms)
+
+
+Completed 200 OK in 39ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?user=7411282067&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 06:32:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by FoodController#login as HTML
+  Parameters: {"user"=>"7411282067", "password"=>"[FILTERED]"}
+  Rendering food/login.html.erb within layouts/application
+  Rendered food/login.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 306ms (Views: 289.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/food/login_action?user=7411282067&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 06:32:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#login_action as */*
+  Parameters: {"user"=>"7411282067", "password"=>"[FILTERED]"}
+Started GET "/?user=7411282067&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 06:32:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`phone_number` = '7411282067' LIMIT 1[0m
+  ↳ app/controllers/food_controller.rb:12
+  [1m[35m (0.8ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 32ms (Views: 0.1ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/food/receiver" for 10.0.2.2 at 2019-07-05 06:32:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#login as HTML
+  Parameters: {"user"=>"7411282067", "password"=>"[FILTERED]"}
+  Rendering food/login.html.erb within layouts/application
+  Rendered food/login.html.erb within layouts/application (1.0ms)
+Processing by FoodController#receiver as HTML
+  Rendering food/receiver.html.erb within layouts/application
+  Rendered food/receiver.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 55ms (Views: 53.4ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 48ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-07-05 06:33:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#login as HTML
+  Rendering food/login.html.erb within layouts/application
+  Rendered food/login.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 24ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/food/login_action?user=7204225176&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 06:33:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#login_action as */*
+  Parameters: {"user"=>"7204225176", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`phone_number` = '7204225176' LIMIT 1[0m
+  ↳ app/controllers/food_controller.rb:12
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/?user=7204225176&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 06:33:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#login as HTML
+  Parameters: {"user"=>"7204225176", "password"=>"[FILTERED]"}
+  Rendering food/login.html.erb within layouts/application
+  Rendered food/login.html.erb within layouts/application (0.9ms)
+Started GET "/food/donor" for 10.0.2.2 at 2019-07-05 06:33:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/food/donor"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Completed 200 OK in 130ms (Views: 129.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/food/donor" for 10.0.2.2 at 2019-07-05 06:33:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#donor as HTML
+  Rendering food/donor.html.erb within layouts/application
+  Rendered food/donor.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 25ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-07-05 06:34:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#login as HTML
+  Rendering food/login.html.erb within layouts/application
+  Rendered food/login.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 39ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/food/login_action?user=7411282067&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 06:34:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#login_action as */*
+  Parameters: {"user"=>"7411282067", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`phone_number` = '7411282067' LIMIT 1[0m
+  ↳ app/controllers/food_controller.rb:12
+Completed 200 OK in 24ms (Views: 0.2ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/?user=7411282067&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 06:34:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#login as HTML
+  Parameters: {"user"=>"7411282067", "password"=>"[FILTERED]"}
+  Rendering food/login.html.erb within layouts/application
+  Rendered food/login.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/food/receiver" for 10.0.2.2 at 2019-07-05 06:34:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#receiver as HTML
+  Rendering food/receiver.html.erb within layouts/application
+  Rendered food/receiver.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-07-05 06:34:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#login as HTML
+  Rendering food/login.html.erb within layouts/application
+  Rendered food/login.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/food/login_action?user=7204225176&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 06:34:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#login_action as */*
+  Parameters: {"user"=>"7204225176", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`phone_number` = '7204225176' LIMIT 1[0m
+  ↳ app/controllers/food_controller.rb:12
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/?user=7204225176&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 06:34:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/food/donor" for 10.0.2.2 at 2019-07-05 06:34:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#login as HTML
+  Parameters: {"user"=>"7204225176", "password"=>"[FILTERED]"}
+Processing by FoodController#donor as HTML
+  Rendering food/donor.html.erb within layouts/application
+  Rendered food/donor.html.erb within layouts/application (0.4ms)
+  Rendering food/login.html.erb within layouts/application
+  Rendered food/login.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 55ms (Views: 51.4ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 88ms (Views: 63.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/food/donor" for 10.0.2.2 at 2019-07-05 06:35:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#donor as HTML
+  Rendering food/donor.html.erb within layouts/application
+  Rendered food/donor.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 32ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/food/receiver" for 10.0.2.2 at 2019-07-05 06:36:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#receiver as HTML
+  Rendering food/receiver.html.erb within layouts/application
+  Rendered food/receiver.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/food/donor" for 10.0.2.2 at 2019-07-05 06:36:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#donor as HTML
+  Rendering food/donor.html.erb within layouts/application
+  Rendered food/donor.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  `events`.* FROM `events` ORDER BY `events`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  `events`.* FROM `events` ORDER BY `events`.`id` DESC LIMIT 1[0m
+Started GET "/food/donor" for 10.0.2.2 at 2019-07-05 06:58:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.4ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by FoodController#donor as HTML
+  Rendering food/donor.html.erb within layouts/application
+  Rendered food/donor.html.erb within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    33: 					<th>Order Details</th>
+    34: 				</thead>
+    35: 				<tbody>
+    36: 					<%@donor.each do |event|%>
+    37: 						<tr>
+    38: 							<td><%=event.id%></td>
+    39: 							<td><%=event.location%></td>
+  
+app/views/food/donor.html.erb:36:in `_app_views_food_donor_html_erb__3770014697173317042_70036088183880'
+Started GET "/food/donor" for 10.0.2.2 at 2019-07-05 06:59:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#donor as HTML
+  Rendering food/donor.html.erb within layouts/application
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT `events`.* FROM `events`[0m
+  ↳ app/views/food/donor.html.erb:36
+  Rendered food/donor.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 292ms (Views: 288.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/food/donor" for 10.0.2.2 at 2019-07-05 06:59:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#donor as HTML
+  Rendering food/donor.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT `events`.* FROM `events`[0m
+  ↳ app/views/food/donor.html.erb:37
+  Rendered food/donor.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 51ms (Views: 48.9ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  `events`.* FROM `events` ORDER BY `events`.`id` DESC LIMIT 1[0m
+Started GET "/food/donor" for 10.0.2.2 at 2019-07-05 07:11:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by FoodController#donor as HTML
+  Rendering food/donor.html.erb within layouts/application
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT `events`.* FROM `events`[0m
+  ↳ app/views/food/donor.html.erb:36
+  Rendered food/donor.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 309ms (Views: 290.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-07-05 07:11:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#login as HTML
+  Rendering food/login.html.erb within layouts/application
+  Rendered food/login.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 35ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/food/login_action?user=7411282067&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 07:11:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#login_action as */*
+  Parameters: {"user"=>"7411282067", "password"=>"[FILTERED]"}
+Started GET "/?user=7411282067&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 07:11:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`phone_number` = '7411282067' LIMIT 1[0m
+  ↳ app/controllers/food_controller.rb:10
+  [1m[35m (0.6ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by FoodController#login as HTML
+  Parameters: {"user"=>"7411282067", "password"=>"[FILTERED]"}
+  Rendering food/login.html.erb within layouts/application
+  Rendered food/login.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 74ms (ActiveRecord: 32.1ms)
+
+
+  
+ActionView::MissingTemplate (Missing template /receiver with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/vagrant/hackathon/food_for_thought/app/views"
+):
+  
+app/controllers/food_controller.rb:18:in `login_action'
+Completed 200 OK in 155ms (Views: 153.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?user=7411282067&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 07:12:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#login as HTML
+  Parameters: {"user"=>"7411282067", "password"=>"[FILTERED]"}
+  Rendering food/login.html.erb within layouts/application
+  Rendered food/login.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 26ms (Views: 25.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/food/login_action?user=7411282067&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 07:12:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#login_action as */*
+  Parameters: {"user"=>"7411282067", "password"=>"[FILTERED]"}
+Started GET "/?user=7411282067&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 07:12:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (15.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`phone_number` = '7411282067' LIMIT 1[0m
+  ↳ app/controllers/food_controller.rb:10
+Processing by FoodController#login as HTML
+  Parameters: {"user"=>"7411282067", "password"=>"[FILTERED]"}
+  Rendering food/login.html.erb within layouts/application
+  Rendered food/login.html.erb within layouts/application (0.6ms)
+  Rendering food/receiver.html.erb within layouts/application
+  Rendered food/receiver.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 71ms (Views: 67.9ms | ActiveRecord: 0.0ms)
+
+
+Completed 500 Internal Server Error in 105ms (Views: 51.7ms | ActiveRecord: 32.5ms)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/food_controller.rb:24:in `login_action'
+Started GET "/?user=7411282067&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 07:12:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#login as HTML
+  Parameters: {"user"=>"7411282067", "password"=>"[FILTERED]"}
+  Rendering food/login.html.erb within layouts/application
+  Rendered food/login.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/food/login_action?user=7411282067&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 07:12:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#login_action as */*
+  Parameters: {"user"=>"7411282067", "password"=>"[FILTERED]"}
+Started GET "/?user=7411282067&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 07:12:32 +0000
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`phone_number` = '7411282067' LIMIT 1[0m
+  ↳ app/controllers/food_controller.rb:10
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#login as HTML
+  Parameters: {"user"=>"7411282067", "password"=>"[FILTERED]"}
+  Rendering food/login.html.erb within layouts/application
+  Rendered food/login.html.erb within layouts/application (0.6ms)
+  Rendering food/receiver.html.erb within layouts/application
+  Rendered food/receiver.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 99ms (Views: 55.0ms | ActiveRecord: 21.2ms)
+
+
+Completed 200 OK in 82ms (Views: 80.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?user=7411282067&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 07:13:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by FoodController#login as HTML
+  Parameters: {"user"=>"7411282067", "password"=>"[FILTERED]"}
+  Rendering food/login.html.erb within layouts/application
+  Rendered food/login.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 294ms (Views: 275.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/food/login_action?user=7411282067&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 07:13:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#login_action as */*
+  Parameters: {"user"=>"7411282067", "password"=>"[FILTERED]"}
+Started GET "/?user=7411282067&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 07:13:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`phone_number` = '7411282067' LIMIT 1[0m
+  ↳ app/controllers/food_controller.rb:10
+  [1m[35m (0.9ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by FoodController#login as HTML
+  Parameters: {"user"=>"7411282067", "password"=>"[FILTERED]"}
+  Rendering food/login.html.erb within layouts/application
+  Rendered food/login.html.erb within layouts/application (0.6ms)
+  Rendering food/receiver.html.erb within layouts/application
+  Rendered food/receiver.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 104ms (Views: 60.6ms | ActiveRecord: 16.8ms)
+
+
+Completed 200 OK in 52ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?user=7411282067&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 07:15:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by FoodController#login as HTML
+  Parameters: {"user"=>"7411282067", "password"=>"[FILTERED]"}
+  Rendering food/login.html.erb within layouts/application
+  Rendered food/login.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 289ms (Views: 272.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/food/login_action?user=7411282067&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 07:15:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#login_action as */*
+  Parameters: {"user"=>"7411282067", "password"=>"[FILTERED]"}
+Started GET "/?user=7411282067&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 07:15:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`phone_number` = '7411282067' LIMIT 1[0m
+Processing by FoodController#login as HTML
+  Parameters: {"user"=>"7411282067", "password"=>"[FILTERED]"}
+  Rendering food/login.html.erb within layouts/application
+  Rendered food/login.html.erb within layouts/application (0.8ms)
+  ↳ app/controllers/food_controller.rb:10
+Completed 200 OK in 63ms (Views: 0.2ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/food/receiver" for 10.0.2.2 at 2019-07-05 07:15:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#receiver as HTML
+  Rendering food/receiver.html.erb within layouts/application
+  Rendered food/receiver.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 77ms (Views: 75.7ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-07-05 07:15:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#login as HTML
+  Rendering food/login.html.erb within layouts/application
+  Rendered food/login.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 38ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/food/login_action?user=74112820671&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 07:15:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#login_action as */*
+  Parameters: {"user"=>"74112820671", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`phone_number` = '74112820671' LIMIT 1[0m
+  ↳ app/controllers/food_controller.rb:10
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/?user=74112820671&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 07:15:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#login as HTML
+  Parameters: {"user"=>"74112820671", "password"=>"[FILTERED]"}
+  Rendering food/login.html.erb within layouts/application
+  Rendered food/login.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 35ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/food/login_action?user=7204225176&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 07:15:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#login_action as */*
+  Parameters: {"user"=>"7204225176", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`phone_number` = '7204225176' LIMIT 1[0m
+  ↳ app/controllers/food_controller.rb:10
+Started GET "/?user=7204225176&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 07:15:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Processing by FoodController#login as HTML
+  Parameters: {"user"=>"7204225176", "password"=>"[FILTERED]"}
+  Rendering food/login.html.erb within layouts/application
+  Rendered food/login.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 41ms (Views: 37.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/food/login_action?user=7204225176&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 07:15:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#login_action as */*
+  Parameters: {"user"=>"7204225176", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`phone_number` = '7204225176' LIMIT 1[0m
+  ↳ app/controllers/food_controller.rb:10
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/?user=7204225176&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 07:15:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#login as HTML
+  Parameters: {"user"=>"7204225176", "password"=>"[FILTERED]"}
+  Rendering food/login.html.erb within layouts/application
+  Rendered food/login.html.erb within layouts/application (0.7ms)
+Started GET "/food/donor" for 10.0.2.2 at 2019-07-05 07:15:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#donor as HTML
+  Rendering food/donor.html.erb within layouts/application
+Completed 200 OK in 52ms (Views: 49.4ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT `events`.* FROM `events`[0m
+  ↳ app/views/food/donor.html.erb:36
+  Rendered food/donor.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 53ms (Views: 48.9ms | ActiveRecord: 1.9ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  `events`.* FROM `events` ORDER BY `events`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('420977393102679315', 0)[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+Migrating to CreateOrders (20190705043720)
+  [1m[36mActiveRecord::SchemaMigration Destroy (181.4ms)[0m  [1m[31mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20190705043720'[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('420977393102679315')[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('420977393102679315', 0)[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+Migrating to CreateEvents (20190705043715)
+  [1m[36mActiveRecord::SchemaMigration Destroy (988.2ms)[0m  [1m[31mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20190705043715'[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('420977393102679315')[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('420977393102679315', 0)[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+Migrating to CreateEvents (20190705043715)
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE `events` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `location` varchar(255), `available_meals` int, `phone_number` varchar(255), `email_id` varchar(255), `donor_user_id` int, `event_code` varchar(255), `status` varchar(255))[0m
+  ↳ db/migrate/20190705043715_create_events.rb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('420977393102679315')[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('420977393102679315', 0)[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+Migrating to CreateEvents (20190705043715)
+  [1m[35m (762.7ms)[0m  [1m[35mCREATE TABLE `events` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `location` varchar(255), `available_meals` int, `phone_number` varchar(255), `email_id` varchar(255), `donor_user_id` int, `event_code` varchar(255), `status` varchar(255))[0m
+  ↳ db/migrate/20190705043715_create_events.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190705043715')[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (174.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+Migrating to CreateOrders (20190705043720)
+  [1m[35m (1025.9ms)[0m  [1m[35mCREATE TABLE `orders` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `receiver_user_id` int, `donor_user_id` int, `no_of_meals` int, `event_id` int)[0m
+  ↳ db/migrate/20190705043720_create_orders.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190705043720')[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (112.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('420977393102679315')[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  `events`.* FROM `events` ORDER BY `events`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO `events` (`location`, `available_meals`, `phone_number`, `email_id`, `status`) VALUES ('Akshayanage', 30, '7892326993', 'pkumars.540@gmail.com', 'Active')[0m
+  [1m[35m (170.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 10.0.2.2 at 2019-07-05 07:27:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by FoodController#login as HTML
+  Rendering food/login.html.erb within layouts/application
+  Rendered food/login.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 360ms (Views: 321.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/food/login_action?user=7411282067&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 07:27:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#login_action as */*
+  Parameters: {"user"=>"7411282067", "password"=>"[FILTERED]"}
+Started GET "/?user=7411282067&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 07:27:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.5ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by FoodController#login as HTML
+  Parameters: {"user"=>"7411282067", "password"=>"[FILTERED]"}
+  Rendering food/login.html.erb within layouts/application
+  Rendered food/login.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (13.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`phone_number` = '7411282067' LIMIT 1[0m
+  ↳ app/controllers/food_controller.rb:10
+Completed 200 OK in 53ms (Views: 0.2ms | ActiveRecord: 24.5ms)
+
+
+Completed 200 OK in 47ms (Views: 45.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/food/login_action?user=7411282067&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 07:27:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#login_action as */*
+  Parameters: {"user"=>"7411282067", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`phone_number` = '7411282067' LIMIT 1[0m
+  ↳ app/controllers/food_controller.rb:10
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/?user=7411282067&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 07:27:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#login as HTML
+  Parameters: {"user"=>"7411282067", "password"=>"[FILTERED]"}
+Started GET "/food/receiver" for 10.0.2.2 at 2019-07-05 07:27:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  Rendering food/login.html.erb within layouts/application
+  Rendered food/login.html.erb within layouts/application (0.5ms)
+Processing by FoodController#receiver as HTML
+  Rendering food/receiver.html.erb within layouts/application
+  Rendered food/receiver.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 62ms (Views: 56.9ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 49ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-07-05 07:27:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#login as HTML
+  Rendering food/login.html.erb within layouts/application
+  Rendered food/login.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/food/login_action?user=7204225176&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 07:27:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#login_action as */*
+  Parameters: {"user"=>"7204225176", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`phone_number` = '7204225176' LIMIT 1[0m
+  ↳ app/controllers/food_controller.rb:10
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/?user=7204225176&password=[FILTERED]" for 10.0.2.2 at 2019-07-05 07:27:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#login as HTML
+  Parameters: {"user"=>"7204225176", "password"=>"[FILTERED]"}
+  Rendering food/login.html.erb within layouts/application
+  Rendered food/login.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 32ms (Views: 31.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/food/donor" for 10.0.2.2 at 2019-07-05 07:27:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#donor as HTML
+  Rendering food/donor.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT `events`.* FROM `events`[0m
+  ↳ app/views/food/donor.html.erb:36
+  Rendered food/donor.html.erb within layouts/application (29.4ms)
+Completed 200 OK in 57ms (Views: 53.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/food/donor" for 10.0.2.2 at 2019-07-05 07:31:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#donor as HTML
+  Rendering food/donor.html.erb within layouts/application
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT `events`.* FROM `events`[0m
+  ↳ app/views/food/donor.html.erb:36
+  Rendered food/donor.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 29ms (Views: 26.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/food/donor" for 10.0.2.2 at 2019-07-05 07:36:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.4ms)[0m  [1m[35mSET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by FoodController#donor as HTML
+  Rendering food/donor.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT `events`.* FROM `events`[0m
+  ↳ app/views/food/donor.html.erb:36
+  Rendered food/donor.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 306ms (Views: 285.5ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/food/donor" for 10.0.2.2 at 2019-07-05 07:41:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodController#donor as HTML
+  Rendering food/donor.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT `events`.* FROM `events`[0m
+  ↳ app/views/food/donor.html.erb:36
+  Rendered food/donor.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 59ms (Views: 54.4ms | ActiveRecord: 2.9ms)
+
+

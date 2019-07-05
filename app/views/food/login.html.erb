@@ -21,7 +21,7 @@
 		</div>
 	</div>
 	<div class="container">
-		<div class="row">
+		<div class="row login-content">
 			<div class="col-lg-4 col-sm-6 col-xs-12">
 				<form class="login-form">
 					<div class="form-group">
@@ -47,17 +47,26 @@ function login_action(){
 	    type: 'GET',
 	    data: {user:user,password:password},
 	    success: function (response) {
-	    	location.href = "/food/receiver"
-	    	// alert(response['status']);
-	    	// if (response['status'] == 200)
-	    	// {
-	    	// 	location.href = "/food/receiver"
-	    	// }
+	    	if (response['status'] == 200)
+	    	{
+	    		if (response['details']['user_type'] == 'Receiver')
+	    		{
+	    		  location.href = "/food/receiver"
+	    	  }
+	    	  else
+	    	  {
+	    	  	location.href = "/food/donor"
+	    	  }
+	    	}
+	    	else
+	    	{
+	    		alert(response['message']);
+	    	}
 	       
 	    },
-	    // error: function () {
-	    //     alert("Error while processing.. Try again");
-	    // }
+	    error: function () {
+	        alert("Error while processing.. Try again");
+	    }
 	  });
 	}
 </script
