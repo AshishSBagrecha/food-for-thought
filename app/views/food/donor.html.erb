@@ -10,13 +10,14 @@
 	  <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
 <body>
+  <%@user = User.find(session[:user_id]) %>
 	<div class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<a href="#"><img src="/food_for_thought_logo.png" class="logo-img"></a>
 			</div>
 			<h2 id="user_detail" class="user-account">
-			   <%= %> Donor
+			   <%=@user.first_name%> <%=@user.last_name%>(Donor)
 			</h2>
 		</div>
 	</div>
@@ -38,9 +39,9 @@
 							<td><%= event.id%></td>
 							<td><%= event.location%></td>
 							<td><%= event.available_meals%></td>
-							<td><%= event.available_meals%></td>
+							<td><%= event.available_meals - event.orders.collect{|x| x.no_of_meals}.sum%></td>
 							<td><%= event.status%></td>
-							<td><button onclick ="get_order_details()" class="btn btn-primary" data-toggle="modal" data-target="#order-detail-form">Order Details</button></td>
+							<td><button data-event-id=<%= event.id%> class="btn btn-primary" data-toggle="modal" data-target="#order-detail-form">Order Details</button></td>
 						</tr>
 					<%end%>
 				</tbody>
@@ -57,18 +58,22 @@
 		      <div class="modal-body">
 		        <form class="add-event-form">
 					<div class="form-group">
-						<label for="event-details">Event Details: </label>
-						<textarea class="form-control" name="event-details" id="event-details" required></textarea> 
+					  <label for="location">Location:</label>
+						<input type="text" class="form-control" name="location" id="location" required>
 					</div>
 					<div class="form-group">
-						<label for="event-date">Event Date: </label>
-						<input type="date" class="form-control" name="event-date" id="event-date" required>
+						<label for="phone_number">Phone Number:</label>
+						<input type="tel" class="form-control" id="phone_number" name="phone_number" required>
+					</div>
+					<div class="form-group">
+						<label for="email">email:</label>
+						<input type="email" class="form-control" id="email" name="email" required>
 					</div>
 					<div class="form-group">
 						<label for="hosted">Meals Hosted: </label>
 						<input type="number" class="form-control" id="hosted" name="hosted" min="1" required>
 					</div>
-					<button type="submit" class="btn btn-primary"> Add Event </button>
+					<button type="submit" onclick="create_event()" class="btn btn-primary">Add Event</button>
 				</form>
 		      </div>
 		    </div>
@@ -80,32 +85,24 @@
 	   <div class="modal-content">
 	     <div class="modal-header">
 	       <button type="button" class="close" data-dismiss="modal">&times;</button>
-	       <h4 class="modal-title">Order  Details</h4>
+	       <h4 class="modal-title">Order Details</h4>
 	     </div>
 	     <div class="modal-body">
 	       <h4 class="order-table-header">Orders: </h4>
 	       <table class="table table-hover orders-now">
 	        <thead>
-						<th>Email ID</th>
+						<th>Event Code</th>
 						<th>No.of Meals ordered </th>
 						<th>Status</th>
 				  </thead>
 	       	<tbody>
+	       	 <%Order.all.each do |order|%>
 		       	<tr>
-		       	<td>HKSJNDSF</td>
-		       	<td>8</td>
-		       	<td>Received</td>
+		       	<td><%=order.event.event_code%></td>
+		       	<td><%=order.no_of_meals%></td>
+		       	<td>In Progress</td>
 		       	</tr>
-		       	<tr>
-		       	<td>HKSJNDSF</td>
-		       	<td>10</td>
-		       	<td>Claimed</td>
-		       	</tr>
-		       	<tr>
-		       	<td>HKSJNDSF</td>
-		       	<td>2</td>
-		       	<td>Received</td>
-		       	</tr>
+		       <%end%>
 	       	</tbody>
 	       </table>
 	     </div>
@@ -115,5 +112,25 @@
 	</div>
 </body>
 <script>
-</script
+function create_event()
+{
+	var location = $("#location").val();
+	var email = $('#email').val();
+	var phone_number = $('#phone_number').val();
+	var hosted = $('#hosted').val();
+	var user_id = 
+	$.ajax({
+    url: '/food/create_event',
+    type: 'POST',
+    data: {location:location,email:email,phone_number:phone_number,hosted:hosted},
+    success: function (response) {
+    	alert("Created event successfully");
+    	location.href = "/food/donor"
+    },
+    error: function () {
+        alert("Error while processing.. Try again");
+    }
+	  });
+}
+</script>
 </html>

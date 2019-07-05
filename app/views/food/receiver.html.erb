@@ -10,46 +10,57 @@
 	  <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
 <body>
+  <%@user = User.find(session[:user_id]) %>
 	<div class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<a href="#"><img src="/food_for_thought_logo.png" class="logo-img"></a>
 			</div>
 			<h2 class="user-account">
-				User (Receiver)
+				<%=@user.first_name%> <%=@user.last_name%>(Receiver)
 			</h2>
 		</div>
 	</div>
 	<div class="container">
 			<div class="event-content">
+			  <button class="btn btn-primary" data-toggle="modal" data-target="#order-claim-modal">Place a New Order</button>
 				<table class="table table-hover event-table">
 					<thead>
 						<th>S.no</th>
-						<th>Event Details</th>
-						<th>Hosted No.of Meals</th>
-						<th>Available No.of Meals</th>
-						<th>Status
-						<th>Order Details</th>
+						<th>Ordered No.of Meals</th>
+						<th>Track</th>
 					</thead>
 					<tbody>
+					<% Order.where("receiver_user_id = #{session[:user_id]}").each do |order| %>
 						<tr>
-							<td>1</td>
-							<td>Some Event details</td>
-							<td>30</td>
-							<td>8</td>
-							<td class="status-active">Active</td>
-							<td><button class="btn btn-primary" data-toggle="modal" data-target="#order-claim-modal">Claim</button></td>
+							<td><%=order.id%></td>
+							<td><%=order.no_of_meals%></td>
+							<td><button class="btn btn-success" data-toggle="modal" data-target="#track-order-modal">Track Order</button>
+							</td>
 						</tr>
-						<tr>
-							<td>1</td>
-							<td>Some Event details</td>
-							<td>30</td>
-							<td>8</td>
-							<td class="status-in-active">InActive</td>
-							<td><button class="btn btn-primary disabled" disabled data-toggle="modal" data-target="#order-claim-modal">Claim</button></td>
-						</tr>
+					<%end%>
 					</tbody>
 				</table>
+				<div id="track-order-modal" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+				   <!-- Modal content-->
+				   <div class="modal-content">
+				     <div class="modal-header">
+				       <button type="button" class="close" data-dismiss="modal">&times;</button>
+				       <h4 class="modal-title">Track Order</h4>
+				     </div>
+				     <div class="modal-body">
+				     	<ol class="progtrckr" data-progtrckr-steps="5">
+				      <li class="progtrckr-done"><span>Order Processing</span></li>
+				      <li class="progtrckr-todo"><span>Food Quality Check</span></li>
+				      <li class="progtrckr-todo"><span>Shipped</span></li>
+						  <li class="progtrckr-todo"><span>Received by NGO</span></li>						  
+						  <li class="progtrckr-todo"><span>Delivered</span></li>
+				     </ol>
+				     </div>
+				   </div>
+				 </div>
+				</div>
 				<div id="order-claim-modal" class="modal fade" role="dialog">
 				  <div class="modal-dialog">
 				    <!-- Modal content-->
@@ -72,7 +83,7 @@
 								<label for="code">Event Code: </label>
 								<input type="text" class="form-control" id="event-code" name="event-code">
 							</div>
-							<button type="submit" class="btn btn-primary"> Claim </button>
+							<button type="submit" onclick="place_order(<%=session[:user_id]%>)" class="btn btn-primary"> Order </button>
 						</form>
 				      </div>
 				    </div>
@@ -82,4 +93,23 @@
 			</div>
 		</div>
 </body>
+<script>
+function place_order(receiver_user_id)
+{
+	var no_of_meals = $('#no-of-meals').val();
+	var event_code = $('#event-code').val();
+	$.ajax({
+    url: '/food/place_order',
+    type: 'POST',
+    data: {receiver_user_id:receiver_user_id,no_of_meals:no_of_meals,event_code:event_code},
+    success: function (response) {
+    	alert("Placed a new order successfully");
+    	location.href = "/food/receiver"   
+    },
+    error: function () {
+        alert("Error while processing.. Try again");
+    }
+	  });
+}
+</script>
 </html>
