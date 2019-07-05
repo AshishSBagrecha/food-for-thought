@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="#"><img src="./food_for_thought_logo.png" class="logo-img"></a>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-sm-6 col-xs-12">
+				<form class="login-form">
+					<div class="form-group">
+						<label for="user">User: </label>
+						<input class="form-control" type="text" name="user" id="user" placeholder="Mobile No:">
+					</div>
+					<div class="form-group">
+						<label for="pwd">Password: </label>
+						<input class="form-control" type="password" name="password" id="password">
+					</div>
+					<button id="login_button" onclick="login_action()" type="submit" class="btn btn-primary"> Login </button>
+				</form>
+			</div>
+		</div>
+	</div>	
+</body>
+<script>
+function login_action(){
+  var user = $('#user').val();
+  var password = $('#password').val();
+  alert(user);
+  alert(password);
+	$.ajax({
+	    url: '/food/login',
+	    type: 'POST',
+	    data: {user:user,password:password},
+	    async: false,
+	    success: function (json) {
+	       
+	    },
+	    error: function () {
+	        alert("Error while processing.. Try again");
+	    }
+	  });
+	}
+</script
+</html>
