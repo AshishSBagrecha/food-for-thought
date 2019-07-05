@@ -23,13 +23,12 @@ class FoodController < ApplicationController
   end
 
 	private
-	def send_message(to)
+	def send_message(to,token)
 		account_sid = 'AC94a35860e3eff571097ba9b0b8723bd0'
 		auth_token = '8200d6c7147f78dd987e35d4accf20ff'
 		client = Twilio::REST::Client.new(account_sid, auth_token)
 		from = '+12018796930' # Your Twilio number
 		# to = '+917204225176' # Your mobile phone number
-        token = rand(9999)
 		client.messages.create(
 			from: from,
 			to: to,
