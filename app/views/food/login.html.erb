@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
+  <%= csrf_meta_tags %>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -41,14 +42,17 @@
 function login_action(){
   var user = $('#user').val();
   var password = $('#password').val();
-  alert(user);
-  alert(password);
 	$.ajax({
-	    url: '/food/login',
+	    url: '/food/login_action',
 	    type: 'POST',
 	    data: {user:user,password:password},
 	    async: false,
-	    success: function (json) {
+	    success: function (response) {
+	    	res_data = JSON.parse(response)
+	    	if (res_data['status'] == 200)
+	    	{
+	    		alert(res_data['message']);
+	    	}
 	       
 	    },
 	    error: function () {
